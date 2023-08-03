@@ -5,7 +5,10 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import jp.ac.it_college.std.s22002.intentsample.databinding.MenuRowBinding
 
-class MenuListAdapter(private val data: List<Menu>)
+class MenuListAdapter(
+    private val data: List<Menu>,
+    private val callback: (String,Int) -> Unit
+    )
     : RecyclerView.Adapter<MenuListAdapter.ViewHolder>(){
 
     class ViewHolder(val binding: MenuRowBinding) :RecyclerView.ViewHolder(binding.root)
@@ -23,7 +26,10 @@ class MenuListAdapter(private val data: List<Menu>)
         val menu = data[position]
         holder.binding.apply {
             tvName.text = menu.name
-            tvPrice.text = menu.price.toString()
+            tvPrice.text = "%,d".format(menu.price)
+            root.setOnClickListener {
+                callback(menu.name,menu.price)
+            }
         }
     }
 }
