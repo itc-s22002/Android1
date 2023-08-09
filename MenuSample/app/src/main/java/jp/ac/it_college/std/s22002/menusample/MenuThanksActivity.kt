@@ -2,6 +2,7 @@ package jp.ac.it_college.std.s22002.menusample
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.MenuItem
 import jp.ac.it_college.std.s22002.menusample.databinding.ActivityMenuThanksBinding
 
 class MenuThanksActivity : AppCompatActivity() {
@@ -22,5 +23,20 @@ class MenuThanksActivity : AppCompatActivity() {
             finish()
         }
 
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        val result = when(item.itemId){
+            android.R.id.home -> {
+                finish()
+                true
+            }
+
+            else  -> super.onOptionsItemSelected(item)
+        }
+        return result
     }
 }
+
