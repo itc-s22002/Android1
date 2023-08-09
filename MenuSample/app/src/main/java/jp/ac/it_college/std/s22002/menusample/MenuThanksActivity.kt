@@ -13,6 +13,8 @@ class MenuThanksActivity : AppCompatActivity() {
         binding = ActivityMenuThanksBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        setSupportActionBar(binding.toolbar)
+
         val menuName = intent.getStringExtra("menuName") ?: ""
         val menuPrice = intent.getIntExtra("menuPrice", 0)
 
