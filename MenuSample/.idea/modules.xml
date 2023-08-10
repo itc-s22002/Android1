@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/MenuSample.iml" filepath="$PROJECT_DIR$/.idea/modules/MenuSample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/MenuSample.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/MenuSample.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/MenuSample.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/MenuSample.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/MenuSample.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/MenuSample.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/MenuSample.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/MenuSample.app.unitTest.iml" />
+    </modules>
+  </component>
+</project>
