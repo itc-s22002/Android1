@@ -10,12 +10,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0663c927-c828-420f-a1bd-b046d248035f" name="Changes" comment="8章終了">
-      <change afterPath="$PROJECT_DIR$/../FragmentSample/app/src/main/java/jp/ac/it_college/std/s22002/fragmentsample/Menu.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FragmentSample/app/src/main/java/jp/ac/it_college/std/s22002/fragmentsample/MenuListFragment.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FragmentSample/app/src/main/res/layout/fragment_menu_list.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FragmentSample/app/src/main/res/layout/menu_row.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FragmentSample/app/src/main/java/jp/ac/it_college/std/s22002/fragmentsample/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../FragmentSample/app/src/main/java/jp/ac/it_college/std/s22002/fragmentsample/MainActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FragmentSample/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../FragmentSample/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FragmentSample/app/src/main/java/jp/ac/it_college/std/s22002/fragmentsample/MenuThanksFragment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FragmentSample/app/src/main/res/layout/fragment_menu_thanks.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../FragmentSample/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../FragmentSample/app/src/main/res/values/strings.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
