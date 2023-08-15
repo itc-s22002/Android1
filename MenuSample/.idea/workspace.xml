@@ -10,11 +10,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0663c927-c828-420f-a1bd-b046d248035f" name="Changes" comment="8章終了">
-      <change beforePath="$PROJECT_DIR$/../ConstraintLayoutSample/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ConstraintLayoutSample/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LifeCycleSample/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../LifeCycleSample/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LifeCycleSample/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../LifeCycleSample/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ListViewSample/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ListViewSample/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ViewSample/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ViewSample/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FragmentSample/app/src/main/java/jp/ac/it_college/std/s22002/fragmentsample/Menu.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FragmentSample/app/src/main/java/jp/ac/it_college/std/s22002/fragmentsample/MenuListFragment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FragmentSample/app/src/main/res/layout/fragment_menu_list.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FragmentSample/app/src/main/res/layout/menu_row.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FragmentSample/app/src/main/java/jp/ac/it_college/std/s22002/fragmentsample/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../FragmentSample/app/src/main/java/jp/ac/it_college/std/s22002/fragmentsample/MainActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FragmentSample/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../FragmentSample/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FragmentSample/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../FragmentSample/app/src/main/res/values/strings.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,15 +52,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "cidr.known.project.marker": "true",
-    "last_opened_file_path": "/home/s22002/AndroidStudioProjects/Android1/ListViewSample"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/s22002/AndroidStudioProjects/Android1/ListViewSample&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/app/src/main/java/jp/ac/it_college/std/s22002/menusample" />
