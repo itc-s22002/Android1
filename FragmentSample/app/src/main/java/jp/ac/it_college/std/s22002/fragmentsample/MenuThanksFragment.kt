@@ -5,12 +5,15 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.os.bundleOf
 import jp.ac.it_college.std.s22002.fragmentsample.databinding.FragmentMenuListBinding
 import jp.ac.it_college.std.s22002.fragmentsample.databinding.FragmentMenuThanksBinding
 import kotlinx.coroutines.supervisorScope
 
 internal const val ARG_NAME = "menuName"
 internal const val ARG_PRICE = "menuPrice"
+
+internal const val  REQUEST_BACK_MENU = "backMenu"
 
 /**
  *
@@ -47,7 +50,7 @@ class MenuThanksFragment : Fragment() {
     }
 
     private fun onBackButtonClick(v: View){
-        parentFragmentManager.popBackStack()
+        parentFragmentManager.setFragmentResult(REQUEST_BACK_MENU, bundleOf())
 
     }
 }

@@ -15,7 +15,14 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
 
-            supportFragmentManager.setFragmentResultListener(REQUEST_SELECTED_MENU, this, ::onSelectedMenu)
+            supportFragmentManager.run {
+                setFragmentResultListener(
+                    REQUEST_SELECTED_MENU, this@MainActivity, ::onSelectedMenu
+                )
+                setFragmentResultListener(
+                    REQUEST_BACK_MENU, this@MainActivity, ::onBackMenu
+                )
+            }
     }
 
     private fun onSelectedMenu(requestKey: String, bundle: Bundle){
@@ -23,14 +30,29 @@ class MainActivity : AppCompatActivity() {
 
         supportFragmentManager.commit {
             setReorderingAllowed(true)
-            addToBackStack("Only List")
-            replace(
-                R.id.fragmentMainContainer, MenuThanksFragment::class.java,
-                bundleOf(
-                    ARG_NAME to bundle.getString(RESULT_NAME, ""),
-                    ARG_PRICE to bundle.getInt(RESULT_PRICE, 0)
-                )
+            val args = bundleOf(
+                ARG_NAME to bundle.getString(RESULT_NAME,""),
+                ARG_PRICE to bundle.getInt(RESULT_PRICE, 0)
             )
+            // fragmentMainContainerがあればスマホ版
+            if(binding.fragmentMainContainer != null) {
+                addToBackStack("Only List")
+                replace(R.id.fragmentMainContainer, MenuThanksFragment::class.java,args)
+            } else {
+                replace(R.id.fragmentContainerView2, MenuThanksFragment::class.java, args)
+            }
+        }
+    }
+
+    private fun onBackMenu(requestKey: String, bundle: Bundle){
+        if (binding.fragmentMainContainer != null){
+            supportFragmentManager.popBackStack()
+        } else {
+            supportFragmentManager.commit {
+                binding.fragmentContainerView2?.let {
+                    remove(it.getFragment())
+                }
+            }
         }
     }
 }
